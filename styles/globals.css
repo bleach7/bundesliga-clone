@@ -1,3 +1,36 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+*::selection {
+  @apply bg-black text-white;
+}
+
+html {
+  @apply scroll-smooth;
+}
+
+body::-webkit-scrollbar {
+  @apply w-[7.5px];
+}
+
+body::-webkit-scrollbar-thumb {
+  @apply rounded bg-black;
+}
+
+body::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+
+html,
+body {
+  @apply h-full;
+}
+
+body {
+  @apply bg-white font-inter text-base font-normal text-black;
+}
+
+#__next {
+  @apply flex min-h-full flex-col overflow-hidden;
+}
