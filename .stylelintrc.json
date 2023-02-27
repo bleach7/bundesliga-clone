@@ -1,0 +1,31 @@
+{
+  "extends": [
+    "stylelint-config-recommended",
+    "stylelint-config-rational-order-fix"
+  ],
+  "plugins": ["stylelint-order", "stylelint-config-rational-order-fix/plugin"],
+  "rules": {
+    "declaration-empty-line-before": null,
+    "order/properties-order": [],
+    "plugin/rational-order": [
+      true,
+      {
+        "empty-line-between-groups": true
+      }
+    ],
+    "block-no-empty": null,
+    "unit-allowed-list": [
+      "fr",
+      "rem",
+      "px",
+      "%",
+      "s",
+      "ms",
+      "em",
+      "deg",
+      "vh",
+      "vw",
+      "vmin"
+    ]
+  }
+}
