@@ -15,7 +15,7 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-thumb {
-  @apply rounded bg-black;
+  @apply rounded bg-red-500;
 }
 
 body::-webkit-scrollbar-track {
