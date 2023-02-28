@@ -28,7 +28,7 @@ body {
 }
 
 body {
-  @apply bg-white font-inter text-base font-normal text-black;
+  @apply bg-gray-100 font-inter text-base font-normal text-black;
 }
 
 #__next {
