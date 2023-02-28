@@ -1,10 +1,23 @@
-import { ArrowDownIcon } from "@/assets/icons";
 import { FOOTER_NAV_LINKS } from "@/constants";
 import Link from "next/link";
-import { useMemo } from "react";
+import { useMemo, useState } from "react";
 import { Container } from "../Container";
+import { Select } from "../Select";
+
+const THEMES = [
+  { id: "dark", name: "Dark" },
+  { id: "light", name: "Light" },
+];
+
+const LANGS = [
+  { id: "en", name: "English" },
+  { id: "ru", name: "Russian" },
+];
 
 export const PublicFooter = () => {
+  const [selectedTheme, setSelectedTheme] = useState(THEMES[0]);
+  const [selectedLang, setSelectedLang] = useState(LANGS[0]);
+
   const year = useMemo(() => new Date().getFullYear(), []);
 
   return (
@@ -29,23 +42,19 @@ export const PublicFooter = () => {
             <p>© {year} DFL Deutsche Fußball Liga GmbH</p>
             <div className="flex items-center gap-x-5">
               <p>Choose language</p>
-              <button
-                type="button"
-                className="relative grid w-[150px] grid-cols-[1fr_18px] items-center gap-x-[20px] border-b border-gray-100 py-3 px-3 text-start text-gray-100 before:absolute before:top-0 before:left-0 before:h-full before:w-full before:bg-white before:opacity-0 before:transition-all before:duration-300 before:ease-in-out before:content-[''] hover:before:opacity-25"
-              >
-                <span>English</span>
-                <ArrowDownIcon className="h-auto w-full text-gray-400" />
-              </button>
+              <Select
+                items={LANGS}
+                value={selectedLang}
+                onChange={setSelectedLang}
+              />
             </div>
             <div className="flex items-center gap-x-5">
               <p>Display Mode</p>
-              <button
-                type="button"
-                className="relative grid w-[150px] grid-cols-[1fr_18px] items-center gap-x-[20px] border-b border-gray-100 py-3 px-3 text-start text-gray-100 before:absolute before:top-0 before:left-0 before:h-full before:w-full before:bg-white before:opacity-0 before:transition-all before:duration-300 before:ease-in-out before:content-[''] hover:before:opacity-25"
-              >
-                <span>Light</span>
-                <ArrowDownIcon className="h-auto w-full text-gray-400" />
-              </button>
+              <Select
+                items={THEMES}
+                value={selectedTheme}
+                onChange={setSelectedTheme}
+              />
             </div>
           </div>
         </Container>
