@@ -5,7 +5,7 @@ export const PublicLayout = ({ children }: IPublicLayout) => {
   return (
     <>
       <PublicHeader />
-      <main className="flex-auto pt-32">{children}</main>
+      <main className="flex-auto pt-32 pb-40">{children}</main>
       <PublicFooter />
     </>
   );

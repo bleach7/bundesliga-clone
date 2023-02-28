@@ -1,13 +1,9 @@
 import { FOOTER_NAV_LINKS } from "@/constants";
+import { useTheme } from "next-themes";
 import Link from "next/link";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { Container } from "../Container";
 import { Select } from "../Select";
-
-const THEMES = [
-  { id: "dark", name: "Dark" },
-  { id: "light", name: "Light" },
-];
 
 const LANGS = [
   { id: "en", name: "English" },
@@ -15,16 +11,26 @@ const LANGS = [
 ];
 
 export const PublicFooter = () => {
-  const [selectedTheme, setSelectedTheme] = useState(THEMES[0]);
   const [selectedLang, setSelectedLang] = useState(LANGS[0]);
-
+  const {
+    theme: nextTheme,
+    setTheme: setNextThemes,
+    themes: nextThemes,
+  } = useTheme();
   const year = useMemo(() => new Date().getFullYear(), []);
+  const [theme, setTheme] = useState<any>();
+  const [themes, setThemes] = useState<any>();
+
+  useEffect(() => {
+    setTheme(nextTheme);
+    setThemes(nextThemes);
+  }, [nextTheme, nextThemes]);
 
   return (
     <footer className="text-xs">
-      <div className="border-t border-gray-300 bg-white">
+      <div className="border-t border-gray-300 bg-white dark:border-[#64686c] dark:bg-[#191e24]">
         <Container>
-          <ul className="flex items-center justify-between py-7 text-gray-700">
+          <ul className="flex items-center justify-between py-7 text-gray-700 dark:text-[#c9cccf]">
             {FOOTER_NAV_LINKS.map((link, i) => (
               <li
                 key={i}
@@ -50,11 +56,9 @@ export const PublicFooter = () => {
             </div>
             <div className="flex items-center gap-x-5">
               <p>Display Mode</p>
-              <Select
-                items={THEMES}
-                value={selectedTheme}
-                onChange={setSelectedTheme}
-              />
+              {theme && (
+                <Select items={themes} value={theme} onChange={setNextThemes} />
+              )}
             </div>
           </div>
         </Container>

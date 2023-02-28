@@ -6,7 +6,60 @@ const Home = () => {
     <PublicLayout>
       <section>
         <Container width="primary">
-          <h1>Home Page</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Consequuntur cum magni nemo temporibus tenetur assumenda ab, fuga
+            quos excepturi nihil mollitia sed voluptate ullam libero nisi
+            doloremque eaque accusamus quidem.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Consequuntur cum magni nemo temporibus tenetur assumenda ab, fuga
+            quos excepturi nihil mollitia sed voluptate ullam libero nisi
+            doloremque eaque accusamus quidem.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Consequuntur cum magni nemo temporibus tenetur assumenda ab, fuga
+            quos excepturi nihil mollitia sed voluptate ullam libero nisi
+            doloremque eaque accusamus quidem.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Consequuntur cum magni nemo temporibus tenetur assumenda ab, fuga
+            quos excepturi nihil mollitia sed voluptate ullam libero nisi
+            doloremque eaque accusamus quidem.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Consequuntur cum magni nemo temporibus tenetur assumenda ab, fuga
+            quos excepturi nihil mollitia sed voluptate ullam libero nisi
+            doloremque eaque accusamus quidem.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Consequuntur cum magni nemo temporibus tenetur assumenda ab, fuga
+            quos excepturi nihil mollitia sed voluptate ullam libero nisi
+            doloremque eaque accusamus quidem.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Consequuntur cum magni nemo temporibus tenetur assumenda ab, fuga
+            quos excepturi nihil mollitia sed voluptate ullam libero nisi
+            doloremque eaque accusamus quidem.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Consequuntur cum magni nemo temporibus tenetur assumenda ab, fuga
+            quos excepturi nihil mollitia sed voluptate ullam libero nisi
+            doloremque eaque accusamus quidem.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Consequuntur cum magni nemo temporibus tenetur assumenda ab, fuga
+            quos excepturi nihil mollitia sed voluptate ullam libero nisi
+            doloremque eaque accusamus quidem.
+          </p>
         </Container>
       </section>
     </PublicLayout>
