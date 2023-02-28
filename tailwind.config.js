@@ -6,6 +6,10 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    container: {
+      center: true,
+      padding: "25px",
+    },
     extend: {
       fontFamily: {
         inter: "Inter, sans-serif",
