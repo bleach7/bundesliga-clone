@@ -52,7 +52,7 @@ export const PublicHeader = () => {
     >
       <div
         id="header-top"
-        className="relative text-xs before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:bg-gray-100 before:content-['']"
+        className="relative text-xs before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:bg-gray-100 before:content-[''] dark:before:bg-[#000e14]"
       >
         <Container width="secondary">
           <div className="flex items-center justify-between py-3">
