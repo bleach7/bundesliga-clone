@@ -48,7 +48,7 @@ export const PublicHeader = () => {
   return (
     <header
       id="header"
-      className="fixed top-0 left-0 z-10 w-full bg-white text-sm text-[#888c90] shadow transition-transform duration-300 ease-in-out dark:bg-[#34383c]"
+      className="fixed top-0 left-0 z-50 w-full bg-white text-sm text-[#888c90] shadow transition-transform duration-300 ease-in-out dark:bg-[#34383c]"
     >
       <div
         id="header-top"
